@@ -173,3 +173,121 @@ function printArray(number){
     
     return newArray;
   }
+
+  function isSameNum(num1, num2) {
+	return num1===num2? true: false;
+}
+
+function isSameNum(num1, num2) {
+	return num1 === num2
+}
+
+function isSameNum(num1, num2) {
+	if (num1 === num2){
+		return true;
+	}else{
+		return false;
+	}
+}
+
+function profitableGamble(prob, prize, pay) {
+	return prob*prize>pay
+}
+
+function profitableGamble(prob, prize, pay) {
+	return prob * prize > pay ? true : false;
+}
+
+function greeting(name) {
+	if(name == "Mubashir") {
+	  return "Hello, my Love!";
+	}else{
+	   return "Hello, " + name + "!";	
+	  }
+  }
+
+  function greeting(name){
+	return name == "Mubashir"?"Hello, my Love!":"Hello, " + name + "!";
+	}
+
+	function calculator(str) {
+		return eval(str);
+	}
+
+	const calculator = (str) => eval(str);
+
+	const calculator = eval;
+
+	function returnNegative(n) {
+		return -Math.abs(n); 
+	}
+
+	function convert(hours, minutes) {
+		return (hours*3600)+(minutes*60)
+	}
+
+	function convert(hours, minutes) {
+		return ((hours*60) + minutes) * 60
+	}
+
+	function frames(minutes, fps) {
+		return minutes*(fps*60)
+	}
+
+	function comp(str1, str2) {
+		return (str1.length==str2.length)? true: false;
+	}
+
+	function comp(str1, str2) {
+		return str1.length === str2.length;
+	}
+
+	function makesTen(a, b) {
+		if(a==10 || b==10){
+			return true;
+		}else if(a+b==10){
+				return true;	
+		}else{
+			return false;
+		} 
+	}
+
+	let makesTen = (a,b)=> a + b == 10 ||a == 10 || b == 10;
+
+	const makesTen = (a, b) => [a, b, a + b].includes(10);
+
+	function makesTen(a,b){
+		if (a === 10 || b === 10 || a + b === 10) { 
+		return true;
+		} else {
+			return false;
+		}
+	}
+
+	function makePair(num1, num2) {
+		return [num1, num2];
+	}
+
+	function makePair(num1, num2) {
+		return [...arguments]
+	}
+
+	const makePair = (a,b) => [a,b];
+
+	function swap(a, b){
+		return [b, a]
+	}
+
+	arrowFunc=(a)=>a;
+
+	function length(str) {
+		return str.length;
+	}
+
+	function maxNum(n1,n2) {
+		if (n1<n2) {
+		  return n2;
+		}else{
+		return n1;
+	  }
+	}
